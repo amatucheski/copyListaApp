@@ -27,19 +27,42 @@ how many list vars do I need?
 */
 
 
-$(document).ready(){
-	
-	document.getElementById("submit").addEventListener("click", function(){
-		
-		var firstName = document.getElementById("firstName");
-		var listUnprocessed = document.getElementById("listInput");
-		
-	})
-	
-	
-}
-	
+$(function(){
+    $("#submit").click(function(){
+        Alert("clicked");
+});
 
+/* Commented OUT for now
+	
+$(function(){
+    $("#submit").click(function(){
+        //save inputs
+        Var firstName = document.getElementById("firstName);
+        Var listUnrpocessed = document.getElementById("listInput");
+
+        //create new array
+        Var listArray = new Array();
+        listArray = listUnprocessed.split(',');
+
+        Function ul(listArray){
+            Var list = document.createElement('ul');
+
+             //for loop to create <li>
+            For (i = 0, i < listArray.length, i++){
+               //Create list item
+               var listItem = "document.createElement('li);
+               //set list item contents
+               listItem.appendChild(document.createTextNode(listArray[i]));
+               //Add it to the list
+               list.appendChild(item);
+     }}
+     //Add contents list to "#output"
+     document.getElementById("output").appendChild(ul(listArray));
+
+});
+});
+	
+*/
 
 
 //var listUnprocessed=document.getElementById("listInput");
