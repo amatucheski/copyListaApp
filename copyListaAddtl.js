@@ -29,8 +29,8 @@ how many list vars do I need?
 
 $(function(){
     $("#submit").click(function(){
-        Alert("clicked");
-});
+        alert("clicked");
+})});
 
 /* Commented OUT for now
 	
@@ -64,5 +64,3 @@ $(function(){
 	
 */
 
-
-//var listUnprocessed=document.getElementById("listInput");
