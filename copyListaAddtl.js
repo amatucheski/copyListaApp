@@ -26,41 +26,48 @@ how many list vars do I need?
 
 */
 
-
+/*
 $(function(){
     $("#submit").click(function(){
         alert("clicked");
 })});
-
-/* Commented OUT for now
+*/
 	
 $(function(){
+	"use strict";
     $("#submit").click(function(){
         //save inputs
-        Var firstName = document.getElementById("firstName);
-        Var listUnrpocessed = document.getElementById("listInput");
-
+        var firstName = document.getElementById("firstName").value;
+        var listUnprocessed = document.getElementById("listInput").value;
+		console.log(firstName, listUnprocessed);
+	
+		
         //create new array
-        Var listArray = new Array();
+        var listArray = new Array();
         listArray = listUnprocessed.split(',');
+		console.log(listArray);
+	});
+});
+		
+/*
+		
 
-        Function ul(listArray){
-            Var list = document.createElement('ul');
+        function ul(listArray){
+            var list = document.createElement('ul');
+			var i = "";
 
              //for loop to create <li>
-            For (i = 0, i < listArray.length, i++){
+            for (i = 0, i < listArray.length, i++) {
                //Create list item
-               var listItem = "document.createElement('li);
+               var listItem = document.createElement('li');
                //set list item contents
                listItem.appendChild(document.createTextNode(listArray[i]));
                //Add it to the list
-               list.appendChild(item);
+               list.appendChild(listItem);
      }}
      //Add contents list to "#output"
      document.getElementById("output").appendChild(ul(listArray));
 
 });
-});
-	
+})
 */
-
